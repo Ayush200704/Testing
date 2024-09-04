@@ -1,0 +1,30 @@
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.75rem; /* Assuming 1rem = 16px, so 11/4 = 2.75rem */
+  transition: color 0.3s ease; /* Adjust duration and timing function as needed */
+}
+
+.button:hover {
+  color: var(--color-1); /* Assuming you have a CSS variable for color-1 */
+}
+
+.button-default {
+  color: #f5f5f5; /* Assuming you have a CSS variable for n-1 */
+}
+
+.button-white {
+  color: var(--n-8); /* Assuming you have a CSS variable for n-8 */
+}
+
+.button-padding-default {
+  padding-left: 1.75rem; /* Assuming 1rem = 16px, so 7/4 = 1.75rem */
+  padding-right: 1.75rem;
+}
+
+.button-text {
+  position: relative;
+  z-index: 10;
+}

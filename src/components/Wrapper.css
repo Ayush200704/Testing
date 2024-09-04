@@ -1,0 +1,318 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  background: var(--second-bg-color);
+  padding-bottom: 6rem;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  margin-top:5rem ;
+
+}
+
+span {
+  color: var(--main-color);
+}
+
+.about-img {
+  position: relative;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img img {
+  width: 60%;
+  border-radius: 50%;
+  border: 0.2rem solid var(--main-color);
+  border: 4px solid #00abf0;
+  margin: 20px;
+}
+
+.about-img .circle-spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-top: 0.2rem solid var(--second-bg-color);
+  border-bottom: 0.2rem solid var(--second-bg-color);
+  border-left: 0.2rem solid var(--main-bg-color);
+  border-right: 0.2rem solid var(--main-bg-color);
+}
+
+.about-content {
+  text-align: center;
+}
+
+.about-content h3 {
+  font-size: 2.6rem;
+}
+
+.about-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+  max-width: 80vw;
+}
+
+.btn-box.btns {
+  display: inline-block;
+  width: 15rem;
+}
+
+
+.container {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+
+.card {
+  width: 80px;
+  border-radius: 0.75rem;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 2rem;
+  margin: 0 10px;
+  display: flex;
+  align-items: flex-end;
+  transition: width 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.card > .row {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card.inactive {
+  width: 80px; 
+}
+.card > .row > .icon {
+  background: #223;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.description {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card > .row > .description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 80px;
+  width: 520px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: 0.3s;
+  transition: all 0.3s ease;
+}
+
+.description p {
+  color: #b0b0ba;
+  padding-top: 5px;
+}
+
+.description h4 {
+  text-transform: uppercase;
+}
+.wrapper input {
+  display: none;
+}
+
+.wrapper input:hover + label {
+  width: 600px;
+}
+
+.wrapper .active + label .description {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+.wrapper .active + label {
+  width: 600px;
+}
+
+.wrapper input:active + label .description {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.card[for="c1"] {
+  
+  background-image: url(../assets/b33.gif);
+}
+
+.card[for="c2"] {
+  background-image: url(../assets/b33.gif);
+}
+
+.card[for="c3"] { 
+  background-image: url(../assets/b33.gif);
+}
+
+.card[for="c4"] {
+  background-image: url(../assets/b33.gif);
+} 
+
+.card[for="c5"] {
+  background-image: url(../assets/b33.gif);
+} 
+
+.card[for="c6"] {
+  background-image: url(../assets/b33.gif);
+} 
+
+.bs1{
+  height: 50px;
+  width: 200px;
+  border-radius: 15px;
+  background-color: #265073;
+}
+
+.bs1 .b{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ECF4D6;
+  text-decoration: none;
+  margin-top: 5%;
+  font-size: 26px;
+}
+
+@media screen and (max-width: 768px) {
+  .heading {
+    font-size: 3rem;
+  }
+
+  .card {
+    height: 300px;
+  }
+
+  .card > .row > .icon {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+  }
+
+  .card > .row > .description {
+    height: 60px;
+  }
+
+  .description h4 {
+    font-size: 1rem;
+  }
+
+  .description p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .card {
+    height: 250px;
+  }
+
+  .card > .row > .icon {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+  }
+
+  .card > .row > .description {
+    height: 50px;
+  }
+
+  .description h4 {
+    font-size: 0.9rem;
+  }
+
+  .description p {
+    font-size: 0.7rem;
+  }
+
+  .wrapper input:hover + label,
+  .wrapper .active + label {
+    width: calc(100vw - 2rem);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .card {
+    height: 200px;
+    margin: 0 3px;
+  }
+
+  .card > .row > .icon {
+    width: 25px;
+    height: 25px;
+    margin: 3px;
+  }
+
+  .card > .row > .description {
+    height: 40px;
+    width: calc(95vw - 31px);
+  }
+
+  .description h4 {
+    font-size: 0.8rem;
+  }
+
+  .description p {
+    font-size: 0.6rem;
+  }
+
+  .wrapper input:hover + label,
+  .wrapper .active + label {
+    width: 95vw;
+  }
+
+ 
+}
+   
+
+@media only screen and (max-width: 600px) {
+.container{
+ 
+  height: 40vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+
+ 
+
+}
+}
+
+

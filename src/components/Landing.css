@@ -1,0 +1,36 @@
+.landing {
+    display: grid;
+    place-items: center;
+    position: relative;
+    height: 100svh;
+    overflow: hidden;
+    margin-top: 60px;
+    padding-block: 7rem;
+    margin-block-end: 3rem;
+    transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
+.landing-text {
+    z-index: 1;
+    text-align: center;
+    color: white;
+    position: relative;
+    font-size: 5rem;
+    transition: opacity 0.1s ease;
+}
+
+.landing > img {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .landing, .landing-text {
+        transition: none;
+    }
+}

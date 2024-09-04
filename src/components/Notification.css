@@ -1,0 +1,53 @@
+.notification {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem 1rem 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  gap: 1.25rem;
+}
+
+.notification-image {
+  border-radius: 0.75rem;
+}
+
+.notification-content {
+  flex: 1;
+}
+
+.notification-title {
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.notification-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notification-images {
+  display: flex;
+  margin: -0.125rem;
+}
+
+.notification-image-item {
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #1c1c1e;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.notification-user-image {
+  width: 100%;
+}
+
+.notification-time {
+  font-size: 0.875rem;
+  color: #a1a1aa;
+}

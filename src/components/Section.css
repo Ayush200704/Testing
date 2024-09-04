@@ -1,0 +1,113 @@
+.section {
+  position: relative;
+}
+
+.section-padding {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-padding {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.section-padding-lg {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .section-padding-lg {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-padding-lg {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
+
+.section-border {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 0.0625rem;
+  height: 100%;
+  background-color: #e5e7eb; /* Assuming this is the color for bg-stroke-1 */
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .section-border {
+    display: block;
+  }
+}
+
+.section-border-left {
+  left: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .section-border-left {
+    left: 1.875rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-border-left {
+    left: 2.5rem;
+  }
+}
+
+.section-border-right {
+  right: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .section-border-right {
+    right: 1.875rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-border-right {
+    right: 2.5rem;
+  }
+}
+
+.section-cross {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 1.875rem;
+  right: 1.875rem;
+  height: 0.0625rem;
+  background-color: #e5e7eb; /* Assuming this is the color for bg-stroke-1 */
+  pointer-events: none;
+}
+
+@media (min-width: 1024px) {
+  .section-cross {
+    display: block;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-cross {
+    left: 2.5rem;
+    right: 2.5rem;
+  }
+}
